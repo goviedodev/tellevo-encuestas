@@ -1,0 +1,60 @@
+INFO:     Will watch for changes in these directories: ['/home/goviedo/proyectos/tellevo/tellevo-formularios/encuesta-pucv/python-backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [48838] using WatchFiles
+INFO:     Started server process [48840]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [48840]
+INFO:     Stopping reloader process [48838]
+INFO:     Will watch for changes in these directories: ['/home/goviedo/proyectos/tellevo/tellevo-formularios/encuesta-pucv/python-backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [135145] using WatchFiles
+INFO:     Started server process [135147]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:41422 - "GET /api/v1/encuestas/email_exists/?email=pablo%40tellevoapp.cl HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41422 - "OPTIONS /api/v1/encuestas/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41422 - "POST /api/v1/encuestas/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:54946 - "GET /api/v1/encuestas/email_exists/?email=pablo%40tellevoapp.cl HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35436 - "GET /api/v1/encuestas/email_exists/?email=pruebadestino%40prueba.cl HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35436 - "OPTIONS /api/v1/encuestas/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35436 - "POST /api/v1/encuestas/ HTTP/1.1" 201 Created
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [135147]
+INFO:     Stopping reloader process [135145]
+INFO:     Will watch for changes in these directories: ['/home/goviedo/proyectos/tellevo/tellevo-formularios/encuesta-pucv/python-backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [974615] using WatchFiles
+INFO:     Started server process [974645]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:38878 - "GET /api/v1/encuestas/email_exists/?email=asdf%40ss.cl HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38878 - "OPTIONS /api/v1/encuestas/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38878 - "POST /api/v1/encuestas/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:34998 - "GET /api/v1/encuestas/email_exists/?email=goee%40goer.cl HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34998 - "OPTIONS /api/v1/encuestas/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34998 - "POST /api/v1/encuestas/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:45108 - "GET /api/v1/encuestas/email_exists/?email=prtie%40jg.cl HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45108 - "POST /api/v1/encuestas/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:50000 - "GET /api/v1/encuestas/email_exists/?email=puebo%40ld.cl HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50000 - "POST /api/v1/encuestas/ HTTP/1.1" 201 Created
+INFO:     Will watch for changes in these directories: ['/home/goviedo/proyectos/tellevo/tellevo-formularios/encuesta-pucv/python-backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [1197090] using WatchFiles
+INFO:     Started server process [1197115]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:53932 - "GET /api/v1/encuestas/email_exists/?email=sdfsa%40gsd.cl HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53932 - "OPTIONS /api/v1/encuestas/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53932 - "POST /api/v1/encuestas/ HTTP/1.1" 201 Created
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1197115]
+INFO:     Stopping reloader process [1197090]
+./run: línea 2: uv: orden no encontrada
