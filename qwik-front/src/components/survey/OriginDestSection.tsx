@@ -19,6 +19,7 @@ interface FormState {
 interface OriginDestSectionProps {
   formState: FormState;
   apiKey: string;
+  surveyId?: string;
 }
 
 export default component$((props: OriginDestSectionProps) => {
@@ -178,10 +179,10 @@ export default component$((props: OriginDestSectionProps) => {
               onInput$={(e) => {
                 formState.destino = (e.target as HTMLInputElement).value;
                 // Clear coordinates if user types manually
-                if (
-                  formState.destino !==
-                  "C. Limache 3405, Viña del Mar, Valparaíso"
-                ) {
+                const limiteDireccion = props.surveyId === 'avanza'
+                  ? "C. Limache 1985, 2520558 Valparaíso, Viña del Mar, Valparaíso"
+                  : "C. Limache 3405, Viña del Mar, Valparaíso";
+                if (formState.destino !== limiteDireccion) {
                   formState.destinoLat = null;
                   formState.destinoLng = null;
                 }
@@ -195,16 +196,22 @@ export default component$((props: OriginDestSectionProps) => {
                 type="checkbox"
                 id="epucvCheckbox"
                 checked={
-                  formState.destino ===
-                  "C. Limache 3405, Viña del Mar, Valparaíso"
+                  props.surveyId === 'avanza'
+                    ? formState.destino === "C. Limache 1985, 2520558 Valparaíso, Viña del Mar, Valparaíso"
+                    : formState.destino === "C. Limache 3405, Viña del Mar, Valparaíso"
                 }
                 onChange$={(e) => {
                   const checked = (e.target as HTMLInputElement).checked;
                   if (checked) {
-                    formState.destino =
-                      "C. Limache 3405, Viña del Mar, Valparaíso";
-                    formState.destinoLat = -33.04284;
-                    formState.destinoLng = -71.51676;
+                    if (props.surveyId === 'avanza') {
+                      formState.destino = "C. Limache 1985, 2520558 Valparaíso, Viña del Mar, Valparaíso";
+                      formState.destinoLat = -33.04284;
+                      formState.destinoLng = -71.51676;
+                    } else {
+                      formState.destino = "C. Limache 3405, Viña del Mar, Valparaíso";
+                      formState.destinoLat = -33.04284;
+                      formState.destinoLng = -71.51676;
+                    }
                   } else {
                     formState.destino = "";
                     formState.destinoLat = null;

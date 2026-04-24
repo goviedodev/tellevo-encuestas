@@ -278,7 +278,7 @@ export default component$<Props>(({ config }) => {
 
       <form class="needs-validation" noValidate preventdefault:submit onSubmit$={handleSubmit}>
         <PersonalInfoSection formState={formState} />
-        <OriginDestSection formState={formState} apiKey={apiKey} />
+        <OriginDestSection formState={formState} apiKey={apiKey} surveyId={config.id} />
         <TransportTypeSection formState={formState} />
         {formState.tipoTransporte === 'vehiculo' && (
           <CombustionSection formState={formState} />

@@ -13,8 +13,8 @@ export const avanzaConfig: SurveyConfig = {
   title: "Encuesta de Movilidad — Avanza",
   metaDescription: "Encuesta de movilidad para colaboradores Avanza",
   apiBaseUrl: import.meta.env.VITE_API_BASE_URL || "",
-  logoSrc: "/images/logo-v21.png",
-  logoAlt: "Logo Avanza",
+  logoSrc: "/images/avanza-inclusion.png",
+  logoAlt: "Logo Avanza Inclusión",
 };
 
 export const movilidadConfig: SurveyConfig = {

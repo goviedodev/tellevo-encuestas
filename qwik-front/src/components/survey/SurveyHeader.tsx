@@ -11,8 +11,26 @@ export default component$<Props>(({ config }) => {
       <h1 class="d-flex align-items-center justify-content-center gap-4">
         {/* Paths will be relative to the public folder */}
         <img src="/images/iconno.png" alt="Car Icon" style="height: 88px;" />
-        <span class="text-center">{config.title}</span>
-        <img src={config.logoSrc} alt={config.logoAlt} style="height: 80px;" />
+        <span class="text-center">
+          {config.id === 'avanza' ? (
+            <>
+              <div>Encuesta de Movilidad</div>
+              <div style={{ fontWeight: 'bold' }}>Avanza Inclusión</div>
+            </>
+          ) : (
+            config.title
+          )}
+        </span>
+        <div class="text-center">
+          <img src={config.logoSrc} alt={config.logoAlt} style="height: 80px;" />
+          {config.id === 'avanza' && (
+            <div
+              class="mt-1"
+              style={{ fontSize: '14px', fontWeight: 'bold', color: '#2c5d2c' }}
+              dangerouslySetInnerHTML="INCLUSION<br/>Avanzando hacia una sociedad más inclusiva"
+            />
+          )}
+        </div>
       </h1>
       <div class="d-flex align-items-center justify-content-center">
         <svg width="auto" height="28" style="margin-right: 8px; vertical-align: middle;">
