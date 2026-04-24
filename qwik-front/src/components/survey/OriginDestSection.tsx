@@ -138,7 +138,7 @@ export default component$((props: OriginDestSectionProps) => {
     <div class="card mb-4">
       <div class="card-header bg-primary text-white">
         <h4 class="mb-0">Origen y Destino</h4>
-        <p class="small text-warning mb-0">
+        <p class="small mb-0" style="background-color: #fff3cd; color: #856404; padding: 4px 8px; border-radius: 4px; display: inline-block;">
           (Por favor, ingrese su dirección completa, incluido el número, para asignar correctamente conductores y pasajeros. Estos datos son confidenciales y solo los gestiona el equipo de Te Llevo bajo estrictas políticas de privacidad.)
         </p>
       </div>
@@ -220,7 +220,7 @@ export default component$((props: OriginDestSectionProps) => {
                 }}
               />
               <label class="form-check-label" for="epucvCheckbox">
-                Comunidad el Salto
+                {props.surveyId === 'avanza' ? 'Avanza Inclusión' : 'Comunidad el Salto'}
               </label>
             </div>
           </div>

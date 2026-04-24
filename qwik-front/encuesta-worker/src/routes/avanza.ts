@@ -9,6 +9,22 @@ type Bindings = {
 const app = new Hono<{ Bindings: Bindings }>();
 
 /**
+ * GET /api/v1/encuestas/avanza/count
+ * Retorna el número de encuestas registradas.
+ */
+app.get('/count', async (c) => {
+  try {
+    const result = await c.env.DB.prepare(
+      'SELECT COUNT(*) as count FROM encuestas_avanza'
+    ).first<{ count: number }>();
+    return c.json({ count: result?.count || 0 });
+  } catch (err) {
+    console.error('[Avanza] Error counting:', err);
+    return c.json({ count: 0 });
+  }
+});
+
+/**
  * GET /api/v1/encuestas/avanza/email_exists?email=...
  * Verifica si un email ya fue registrado en la encuesta Avanza.
  */
