@@ -1,0 +1,23 @@
+{
+  "name": "encuesta-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker API para encuestas de movilidad (Avanza y Movilidad)",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create encuestas-db",
+    "db:migrate:local": "wrangler d1 migrations apply encuestas-db --local",
+    "db:migrate:prod": "wrangler d1 migrations apply encuestas-db",
+    "db:init:local": "wrangler d1 execute encuestas-db --file=src/db/schema.sql --local",
+    "db:init:prod": "wrangler d1 execute encuestas-db --file=src/db/schema.sql"
+  },
+  "dependencies": {
+    "hono": "^4.4.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "typescript": "^5.4.5",
+    "wrangler": "^3.57.0"
+  }
+}

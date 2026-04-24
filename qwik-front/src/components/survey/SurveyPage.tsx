@@ -108,7 +108,7 @@ export default component$<Props>(({ config }) => {
       const emailController = new AbortController();
       const emailTimeoutId = setTimeout(() => emailController.abort(), 10000);
       try {
-        const emailCheckResponse = await fetch(`${apiBaseUrl}/api/v1/encuestas/email_exists/?email=${encodeURIComponent(formState.email)}`, {
+        const emailCheckResponse = await fetch(`${apiBaseUrl}/api/v1/encuestas/${config.id}/email_exists?email=${encodeURIComponent(formState.email)}`, {
           signal: emailController.signal,
         });
         clearTimeout(emailTimeoutId);
@@ -216,7 +216,7 @@ export default component$<Props>(({ config }) => {
     const timeoutId = setTimeout(() => controller.abort(), 10000);
 
     try {
-      const response = await fetch(`${apiBaseUrl}/api/v1/encuestas/`, {
+      const response = await fetch(`${apiBaseUrl}/api/v1/encuestas/${config.id}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(submissionData),
