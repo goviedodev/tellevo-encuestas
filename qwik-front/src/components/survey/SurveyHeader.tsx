@@ -53,13 +53,6 @@ export default component$<Props>(({ config }) => {
         </span>
         <div class="text-center">
           <img src={config.logoSrc} alt={config.logoAlt} style="height: 80px;" />
-          {config.id === 'avanza' && (
-            <div
-              class="mt-1"
-              style={{ fontSize: '14px', fontWeight: 'bold', color: '#2c5d2c' }}
-              dangerouslySetInnerHTML="INCLUSION<br/>Avanzando hacia una sociedad más inclusiva"
-            />
-          )}
         </div>
       </h1>
       <div class="d-flex align-items-center justify-content-center">
