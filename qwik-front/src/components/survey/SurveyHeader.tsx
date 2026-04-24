@@ -59,7 +59,7 @@ export default component$<Props>(({ config }) => {
         <svg width="auto" height="28" style="margin-right: 8px; vertical-align: middle;">
           <image href="https://static.vecteezy.com/system/resources/previews/000/552/191/large_2x/green-leaf-vector-icon.jpg" x="0" y="0" height="28" width="28" />
         </svg>
-        <p class="lead mb-0 text-center" style="vertical-align: middle;">Completa esta información y descubre <i>cuánto CO₂</i> genera tu viaje diario al trabajo y cómo podrías reducirlo.</p>
+        <p class="lead mb-0 text-center" style="vertical-align: middle;">Completa esta información y te ayudaremos a mejorar tu movilidad ahorrando tiempo, dinero y el medio ambiente!</p>
         <svg width="auto" height="28" style="margin-left: 8px; vertical-align: middle; transform: scaleX(-1);">
           <image href="https://static.vecteezy.com/system/resources/previews/000/552/191/large_2x/green-leaf-vector-icon.jpg" x="0" y="0" height="28" width="28" />
         </svg>
